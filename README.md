@@ -34,13 +34,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+    An adaptive website uses media queries, but all the units are hardcoded in, so the elements stay the same size even as the viewport size approaches the breakpoint. That means the site might look really bad right before it hits a breakpoint.
+    A fully responsive website uses media queries and responsive units, so the elements change size even when the viewport approaches the breakpoint. That way, the page can still look good even when it gets close to a breakpoint.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+    Mobile first means that the page is designed for a mobile device first, then sized up for larger viewports until it reaches the desktop size. This ensures that the website will look good at all sizes.
+    Desktop first means that the page is designed for a desktop device first, then sized down for smaller viewports until it reaches the mobile size. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+    It responds to the user's font-size preferences, so that the website's font-sizes are relative to the user's preferences. That way, a user who selects "Large" font-size in their browser preferences will have larger font than someone who kept the default font-size from the browser.
+    It also makes it easier to use rems. Font-size 10 is 62.5% of font-size 16, which is the default font-size for most browsers. That way, when we type 1.6rem we get font-size 16. It makes rems more intuitive.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+    Preprocessing basically allows us to type CSS code in a different syntax that is more intuitive for humans to understand. The preprocessor takes that syntax and translates it into normal CSS syntax so that the browser can understand it. It makes writing CSS quicker and easier because it gives us shortcuts that CSS does not have.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+    My favorite concept is parametric mixins because they make it easier to write and customize sets of styles rather than having to copy everything out everytime you need those styles. They are also the concept that gives me the most trouble. The parameters look like variables, so that messes me up sometimes, and I have a hard time figuring out if a mixin needs to be parametric or not.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
