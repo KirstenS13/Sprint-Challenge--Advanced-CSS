@@ -168,8 +168,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-@media ( max-width: 500px ) {
-}
 .nav-bar h1 {
   font-size: 4rem;
   padding: 10px 0;
@@ -204,6 +202,7 @@ footer {
 @media ( max-width: 500px ) {
   .home .intro img {
     width: 100%;
+    height: auto;
   }
 }
 .home .intro h2 {
@@ -216,6 +215,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: auto;
 }
 .home .space-images img {
   width: 28%;
@@ -264,6 +264,7 @@ footer {
 @media ( max-width: 500px ) {
   .home .walk .walk-text {
     width: 100%;
+    height: auto;
   }
 }
 .home .walk .walk-text h3 {
@@ -302,13 +303,14 @@ footer {
 }
 @media ( max-width: 500px ) {
   .home .walk .walk-img {
-    width: 100%;
     margin-left: 0;
     padding-bottom: 20px;
+    width: 100%;
+    height: auto;
   }
 }
 .home .walk .walk-img img {
+  border-radius: 10px;
   width: 100%;
   height: auto;
-  border-radius: 10px;
 }

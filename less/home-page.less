@@ -8,7 +8,8 @@
       border-radius: 5px;
 
       @media @phone {
-        width: 100%;
+        //width: 100%;
+        .standard-width();
       }
     }
 
@@ -25,7 +26,9 @@
   .space-images {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    //width: 100%;
+
+    .standard-width();
 
     img {
       width: 28%;
@@ -75,7 +78,8 @@
       width: 50%;
 
       @media @phone {
-        width: 100%;
+        //width: 100%;
+        .standard-width();
       }
 
       h3 {
@@ -105,15 +109,19 @@
       margin-left: 4%;
 
       @media @phone {
-        width: 100%;
+        //width: 100%;
         margin-left: 0;
         padding-bottom: 20px;
+
+        .standard-width();
       }
       
       img {
-        width: 100%;
-        height: auto;
+        //width: 100%;
+        //height: auto;
         border-radius: 10px;
+
+        .standard-width();
       }
     }
   }
